@@ -41,6 +41,8 @@ public class Fraction {
 
     public Fraction subtract(Fraction other)
     {
+        int n = numerator*other.denominator + denominator*other.numerator;
+        int d = denominator * other.getDenom();
         
 
     }
