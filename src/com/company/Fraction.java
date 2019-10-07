@@ -1,6 +1,6 @@
 package com.company;
 
-public class FrogandFraction {
+public class Fraction {
     private int numerator;		//attributes
     private int denominator;
 
@@ -11,19 +11,25 @@ public class FrogandFraction {
         denominator = d;
     }
 
-    public FrogandFraction() {        //default constructor
+
+    public Fraction() {        //default constructor
     numerator = 0;
     denominator = 0;
     }
+
 
     public int getNum()
     {
         return numerator;
     }
+
+
     public int getDenom()
     {
         return denominator;
     }
+
+
     public Fraction add(Fraction other)
     {
         int n = this.numerator*other.denominator + this.denominator*other.numerator;
@@ -33,7 +39,11 @@ public class FrogandFraction {
         return result;
     }
 
-    // TODO  subtract()
+    public Fraction subtract(Fraction other)
+    {
+        
+
+    }
 
     // TODO multiply()
 
