@@ -84,12 +84,12 @@ public class Fraction {
         Fraction f8 = f6.add(f7);			// add 2 fractions
         System.out.println("3/8 + 2/4 = " + f8);	// print the answer
 
-		/*
+		/* Output
+
     3/4 + 4/5 = 31/20
     3/4 - 4/5 = -1/20
     3/4 * 4/5 = 12/20
-
-		create 2 new fractions and add them here.
+    3/8 + 2/4 = 28/32
 
 		*/
 
