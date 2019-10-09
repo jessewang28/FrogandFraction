@@ -88,6 +88,12 @@ public class Frog {
         System.out.println(f1);
         System.out.println(f2);
 
+        Frog f3 = new Frog("Frank", 5,1);
+        f3.jump(2);                                    //didn't know if you meant execute jump command twice or jump 2 units
+        f3.jump(2);
+        System.out.println(f3);
+        f3.visit(f1);
+        System.out.println(f3);
         // make a new frog named Frank.  have him jump twice and then go visit Freddy.
 
     }
