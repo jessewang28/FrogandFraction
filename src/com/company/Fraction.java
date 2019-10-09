@@ -78,11 +78,16 @@ public class Fraction {
         Fraction f5 = f1.multiply(f2);
         System.out.println(f1 + " * " + f2 + " = " + f5);
 
-		/*
-		Fraction f4 = f1.subtract(f2);
-		System.out.println(f1 + " - " + f2 + " = " + f4);
+        Fraction f6 = new Fraction(3,8);	// create an instance of fraction
+        Fraction f7 = new Fraction(2,4);
 
-		Add code to call multiply f1 and f2 here
+        Fraction f8 = f6.add(f7);			// add 2 fractions
+        System.out.println("3/8 + 2/4 = " + f8);	// print the answer
+
+		/*
+    3/4 + 4/5 = 31/20
+    3/4 - 4/5 = -1/20
+    3/4 * 4/5 = 12/20
 
 		create 2 new fractions and add them here.
 
