@@ -75,7 +75,6 @@ public class Frog {
 
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         Frog f1 = new Frog("Freddy",3,4);	// create an instance of Frog
         f1.eatFly();						// call Frog methods
         f1.moveNorth();
@@ -94,13 +93,14 @@ public class Frog {
         System.out.println(f3);
         f3.visit(f1);
         System.out.println(f3);
-        // make a new frog named Frank.  have him jump twice and then go visit Freddy.
+
 
     }
 
 }
 
 /*  Output
+
 Freddy
 Yum
 Hi I am Freddy the frog and I live at 3 5
@@ -108,4 +108,8 @@ Francine
 Yum
 Hi I am Freddy the frog and I live at 0 2
 Hi I am Francine the frog and I live at 0 2
+Frank
+Hi I am Frank the frog and I live at 9 5
+Hi I am Frank the frog and I live at 0 2
+
 */
