@@ -41,15 +41,28 @@ public class Fraction {
 
     public Fraction subtract(Fraction other)
     {
-        int n = numerator*other.denominator + denominator*other.numerator;
+        int n = numerator*other.denominator - denominator*other.numerator;
         int d = denominator * other.getDenom();
-        
+
+        Fraction result = new Fraction(n,d);
+        return result;
+
+    }
+    public Fraction multiply(Fraction other)
+    {
+        int n = (numerator*other.numerator);
+        int d = denominator * other.getDenom();
+
+        Fraction result = new Fraction(n,d);
+        return result;
 
     }
 
-    // TODO multiply()
-
-    // TODO toString()
+    public String toString ()
+    {
+        String x = numerator + "/" + denominator;
+        return x;
+    }
 
 
     public static void main(String[] args) {
@@ -58,6 +71,12 @@ public class Fraction {
 
         Fraction f3 = f1.add(f2);			// add 2 fractions
         System.out.println("3/4 + 4/5 = " + f3);	// print the answer
+
+        Fraction f4 = f1.subtract(f2);
+        System.out.println(f1 + " - " + f2 + " = " + f4);
+
+        Fraction f5 = f1.multiply(f2);
+        System.out.println(f1 + " * " + f2 + " = " + f5);
 
 		/*
 		Fraction f4 = f1.subtract(f2);
